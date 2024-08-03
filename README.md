@@ -1,3 +1,6 @@
+API : https://github.com/byrmgng/GoogleTTS-API <br>
+app.module.ts dosyasındaki bağlantı ayarı düzenlenmelidir.
+
 # TextToSpeech
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.1.
