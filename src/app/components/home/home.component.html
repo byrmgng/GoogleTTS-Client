@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+        <p class="lead">Text to Speech (TTS), yazılı metinlerin sesli olarak okunmasını sağlayan bir teknolojidir. Bu teknoloji, metinleri doğal ve anlaşılır bir sesle okuyarak çeşitli uygulamalarda kullanılabilir. TTS, görme engelli bireyler için erişilebilirlik sağlar, dil öğrenme sürecinde yardımcı olur ve sesli asistanlarda kullanılır.</p>
+        <h1 class="display-4">Fiyatlandırma</h1>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Ücretsiz</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">0₺<small class="text-body-secondary fw-light">/aylık</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Aylık 10.000 Karakter Hakkı</li>
+                <li>50'den Fazla Dil Desteği</li>
+                <li>380'dan Fazla Ses Desteği </li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-outline-warning">Ücretsiz Kayıt Ol</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Standart</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">50₺<small class="text-body-secondary fw-light">/aylık</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Aylık 1.000.000 Karakter Hakkı</li>
+                <li>50'den Fazla Dil Desteği</li>
+                <li>380'dan Fazla Ses Desteği </li>              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-warning">Başla</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-warning">
+            <div class="card-header py-3 text-bg-warning border-warning">
+              <h4 class="my-0 fw-normal">Premium</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">100₺<small class="text-body-secondary fw-light">/aylık</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Sınırsız Karakter Hakkı</li>
+                <li>50'den Fazla Dil Desteği</li>
+                <li>380'dan Fazla Ses Desteği </li>              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-warning">Başla</button>
+            </div>
+          </div>
+        </div>
+    </div>
+</div>
+<div class="container my-5 w-100">
+    <div style="position: relative;">
+        <textarea [(ngModel)]="text" (input)="updateCharacterCount()" maxlength="50" style="resize: none; width: 100%; height: 300px;" class="w-100" placeholder="Deneme yapmak istediğiniz metni bu alana giriniz. Deneme yapmak için 50 karakter sınır bulunmaktadır."></textarea>
+        <span style="position: absolute; bottom: 5px; right: 5px;">{{ characterCount }}</span>
+    </div>
+    <button class="btn btn-warning btn-lg w-100 mt-3">Dinle</button>
+</div>
